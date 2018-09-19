@@ -19,9 +19,18 @@ $ npm install memoize-token --save
 
 ```js
 const memoizeToken = require('memoize-token')
+let value = -1
+let values = ['foo', 'bar']
 
-memoizeToken('do something')
-// => return something
+const fn = memoizeToken(
+  () => values[++value], 
+  { max: 2, cache, key: 'test' }
+)
+
+  await fn() // => 'foo'
+  await fn() // => 'foo'
+  await fn() // max excedeed, refresh the token => 'bar'
+  await fn() // => 'bar'
 ```
 
 ## API
