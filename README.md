@@ -5,7 +5,7 @@
 [![Coverage Status](https://img.shields.io/coveralls/microlinkhq/memoize-token.svg?style=flat-square)](https://coveralls.io/github/microlinkhq/memoize-token)
 [![Dependency status](https://img.shields.io/david/microlinkhq/memoize-token.svg?style=flat-square)](https://david-dm.org/microlinkhq/memoize-token)
 [![Dev Dependencies Status](https://img.shields.io/david/dev/microlinkhq/memoize-token.svg?style=flat-square)](https://david-dm.org/microlinkhq/memoize-token#info=devDependencies)
-[![NPM Status](https://img.shields.io/npm/dm/memoize-token.svg?style=flat-square)](https://www.npmjs.org/package/memoize-token) [![Greenkeeper badge](https://badges.greenkeeper.io/microlinkhq/memoize-token.svg)](https://greenkeeper.io/)
+[![NPM Status](https://img.shields.io/npm/dm/memoize-token.svg?style=flat-square)](https://www.npmjs.org/package/memoize-token)
 
 > A memoize library for refreshing and cache token values.
 
