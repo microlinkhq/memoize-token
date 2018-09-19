@@ -1,0 +1,90 @@
+{
+  "name": "memoize-token",
+  "description": "A memoize library for refreshing and cache token values.",
+  "homepage": "https://documentup.com/microlinkhq/memoize-token",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "hello@microlink.io",
+    "name": "microlink.io",
+    "url": "https://microlink.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microlinkhq/memoize-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/microlinkhq/memoize-token/issues"
+  },
+  "keywords": [
+    "api",
+    "cache",
+    "call",
+    "hit",
+    "memo",
+    "memoization",
+    "memoize",
+    "perfomance",
+    "refresh",
+    "token"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "coveralls": "latest",
+    "finepack": "latest",
+    "git-authors-cli": "latest",
+    "git-dirty": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "npm-check-updates": "latest",
+    "nyc": "latest",
+    "prettier-standard": "latest",
+    "standard": "11",
+    "standard-markdown": "latest",
+    "standard-version": "latest",
+    "stats-map": "latest"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "commitmsg": "commitlint -E GIT_PARAMS",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown README.md && standard",
+    "postrelease": "npm publish",
+    "precommit": "lint-staged",
+    "prerelease": "git-dirty && npm test",
+    "pretest": "npm run lint",
+    "pretty": "prettier-standard index.js {core,test,bin,scripts}/**/*.js --single-quote --print-width 100",
+    "release": "standard-version",
+    "test": "nyc ava",
+    "update": "ncu -a"
+  },
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "package.json": [
+      "finepack",
+      "git add"
+    ],
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ],
+    "*.md": [
+      "standard-markdown",
+      "git add"
+    ]
+  }
+}
