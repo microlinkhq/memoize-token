@@ -34,6 +34,7 @@
     "@commitlint/config-conventional": "latest",
     "ava": "latest",
     "coveralls": "latest",
+    "delay": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
@@ -63,7 +64,7 @@
     "prerelease": "git-dirty && npm test",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin,scripts}/**/*.js --single-quote --print-width 100",
-    "release": "standard-version",
+    "release": "standard-version && git push --tags",
     "test": "nyc ava",
     "update": "ncu -a"
   },

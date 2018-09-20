@@ -22,14 +22,16 @@ let value = -1
 let values = ['foo', 'bar']
 
 const fn = memoizeToken(
-  () => values[++value], 
-  { max: 2, cache, key: 'test' }
+  () => values[++value],
+  { max: 2, key: 'test', cache }
 )
 
+;(async () => {
   await fn() // => 'foo'
   await fn() // => 'foo'
   await fn() // max excedeed, refresh the token => 'bar'
   await fn() // => 'bar'
+})()
 ```
 
 ## API
@@ -58,6 +60,12 @@ Maximum numbers of calls after refresh the token.
 Type: `String`<br>
 
 The base key to use into the cache.
+
+##### expire
+
+Type: `Number`<br>
+
+Time in milliseconds to consider a token as expired.
 
 ##### cache
 
