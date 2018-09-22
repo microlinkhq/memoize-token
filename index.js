@@ -13,7 +13,7 @@ module.exports = (fn, { key, max, cache = new Map(), expire } = {}) => {
     let { value, count = 0, timestamp } = (await cache.get(key)) || {}
     const now = Date.now()
 
-    if (isNil(value) || (isNil(expire) && now > timestamp) || count >= max) {
+    if (isNil(value) || (!isNil(expire) && now > timestamp) || count >= max) {
       value = await fn(args)
       count = 1
       timestamp = now + expire
