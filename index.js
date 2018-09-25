@@ -10,18 +10,14 @@ module.exports = (fn, { key, max, cache = new Map(), expire } = {}) => {
   assert(key, 'key required')
 
   return async (...args) => {
-    let { value, count = 0, timestamp } = (await cache.get(key)) || {}
-    const now = Date.now()
+    let { value, count = 0 } = (await cache.get(key)) || {}
 
-    if (isNil(value) || (!isNil(expire) && now > timestamp) || count >= max) {
+    if (isNil(value) || count >= max) {
       value = await fn(args)
-      count = 1
-      timestamp = now + expire
-      await cache.set(key, { value, count, timestamp })
-      return value
+      count = 0
     }
 
-    await cache.set(key, { value, count: count + 1, timestamp })
+    await cache.set(key, { value, count: count + 1 }, expire)
     return value
   }
 }
