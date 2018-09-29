@@ -64,7 +64,7 @@
     "prerelease": "git-dirty && npm test",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js {core,test,bin,scripts}/**/*.js --single-quote --print-width 100",
-    "release": "standard-version && git push --tags",
+    "release": "standard-version && git push --follow-tags",
     "test": "nyc ava",
     "update": "ncu -a"
   },

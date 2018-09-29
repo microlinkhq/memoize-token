@@ -13,7 +13,7 @@ module.exports = (fn, { key, max, cache = new Map(), expire } = {}) => {
     let { value, count = 0 } = (await cache.get(key)) || {}
 
     if (isNil(value) || count >= max) {
-      value = await fn(args)
+      value = await fn(...args)
       count = 0
     }
 
