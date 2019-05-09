@@ -1,3 +1,11 @@
+<a name="1.1.4"></a>
+## 1.1.4 (2019-05-09)
+
+* build: add debug mode ([f94872e](https://github.com/microlinkhq/memoize-token/commit/f94872e))
+* build: update release message ([a5b92ee](https://github.com/microlinkhq/memoize-token/commit/a5b92ee))
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.

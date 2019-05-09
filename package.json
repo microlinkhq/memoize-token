@@ -2,13 +2,19 @@
   "name": "memoize-token",
   "description": "A memoize library for refreshing and cache token values.",
   "homepage": "https://documentup.com/microlinkhq/memoize-token",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "main": "index.js",
   "author": {
     "email": "hello@microlink.io",
     "name": "microlink.io",
     "url": "https://microlink.io"
   },
+  "contributors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microlinkhq/memoize-token.git"
