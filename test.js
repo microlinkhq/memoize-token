@@ -10,13 +10,15 @@ test('successive calls', async t => {
   const key = 'test'
   let value = -1
   let values = ['foo', 'bar']
-  const fn = memoizeToken(() => values[++value], { max: 2, cache, key })
+  const fn = () => values[++value]
+  const getToken = memoizeToken(fn, { max: 2, cache, key })
 
-  await fn()
-  await fn()
-
+  t.is(await getToken(), 'foo')
+  t.is(await getToken(), 'foo')
   t.is(cache.get(key).value, 'foo')
   t.is(cache.get(key).count, 2)
+  t.is(await getToken(), 'bar')
+  t.is(await getToken(), 'bar')
 })
 
 test('token refresh', async t => {
