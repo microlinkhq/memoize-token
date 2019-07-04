@@ -1,7 +1,7 @@
 {
   "name": "memoize-token",
   "description": "A memoize library for refreshing and cache token values.",
-  "homepage": "https://documentup.com/microlinkhq/memoize-token",
+  "homepage": "https://nicedoc.io/microlinkhq/memoize-token",
   "version": "1.1.4",
   "main": "index.js",
   "author": {
@@ -51,7 +51,7 @@
     "npm-check-updates": "latest",
     "nyc": "latest",
     "prettier-standard": "latest",
-    "standard": "11",
+    "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest",
     "stats-map": "latest"
