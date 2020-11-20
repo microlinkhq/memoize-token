@@ -9,7 +9,7 @@ test('successive calls', async t => {
   const cache = new Map()
   const key = 'test'
   let value = -1
-  let values = ['foo', 'bar']
+  const values = ['foo', 'bar']
   const fn = () => values[++value]
   const getToken = memoizeToken(fn, { max: 2, cache, key })
 
@@ -25,7 +25,7 @@ test('token refresh', async t => {
   const cache = new Map()
   const key = 'test'
   let value = -1
-  let values = ['foo', 'bar']
+  const values = ['foo', 'bar']
   const fn = memoizeToken(() => values[++value], { max: 2, cache, key })
 
   await fn()
@@ -42,7 +42,7 @@ test('expire time', async t => {
   const cache = new Map()
   const key = 'test'
   let value = -1
-  let values = ['foo', 'bar', 'baz']
+  const values = ['foo', 'bar', 'baz']
   const fn = memoizeToken(() => values[++value], {
     max: 2,
     cache,

@@ -21,7 +21,7 @@ $ npm install memoize-token --save
 ```js
 const memoizeToken = require('memoize-token')
 let value = -1
-let values = ['foo', 'bar']
+const values = ['foo', 'bar']
 
 const fn = memoizeToken(
   () => values[++value],
