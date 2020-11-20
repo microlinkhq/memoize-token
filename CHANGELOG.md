@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.1.5](https://github.com/microlinkhq/memoize-token/compare/v1.1.3...v1.1.5) (2020-11-20)
+
+
+### Bug Fixes
+
+* linter ([0bff0a4](https://github.com/microlinkhq/memoize-token/commit/0bff0a437d4a25d182747e221f5be84adacb52b3))
+
 <a name="1.1.4"></a>
 ## 1.1.4 (2019-05-09)
 
