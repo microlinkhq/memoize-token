@@ -86,6 +86,6 @@ Must implement the following methods: `.get(key)` and `.set(key, value)`, Check 
 ## License
 
 **memoize-token** © [microlink.io](https://microlink.io), released under the [MIT](https://github.com/microlinkhq/memoize-token/blob/master/LICENSE.md) License.<br>
-Authored and maintained by microlink.io with help from [contributors](https://github.com/microlinkhq/memoize-token/contributors).
+Authored and maintained by [Kiko Beats](https://kikobeats.com) with help from [contributors](https://github.com/microlinkhq/memoize-token/contributors).
 
 > [microlink.io](https://microlink.io) · GitHub [microlink.io](https://github.com/microlinkhq) · Twitter [@microlinkhq](https://twitter.com/microlinkhq)
