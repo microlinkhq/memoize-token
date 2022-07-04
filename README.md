@@ -3,9 +3,6 @@
 </div>
 
 ![Last version](https://img.shields.io/github/tag/microlinkhq/memoize-token.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/microlinkhq/memoize-token/master.svg?style=flat-square)](https://travis-ci.com/microlinkhq/memoize-token)
-[![Dependency status](https://img.shields.io/david/microlinkhq/memoize-token.svg?style=flat-square)](https://david-dm.org/microlinkhq/memoize-token)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/microlinkhq/memoize-token.svg?style=flat-square)](https://david-dm.org/microlinkhq/memoize-token#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/memoize-token.svg?style=flat-square)](https://www.npmjs.org/package/memoize-token)
 
 > A memoize library for refreshing and cache token values.
