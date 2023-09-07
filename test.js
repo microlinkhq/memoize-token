@@ -1,6 +1,6 @@
 'use strict'
 
-const delay = require('delay')
+const { setTimeout } = require('timers/promises')
 const test = require('ava')
 
 const memoizeToken = require('.')
@@ -56,7 +56,7 @@ test('expire time', async t => {
   await fn()
   t.is(cache.get(key).value, 'foo')
   t.is(cache.get(key).count, 2)
-  await delay(100)
+  await setTimeout(100)
   await fn()
   t.is(cache.get(key).value, 'bar')
   t.is(cache.get(key).count, 1)
