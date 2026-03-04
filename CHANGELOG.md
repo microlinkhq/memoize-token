@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.2.0 (2026-03-04)
+
+
+### Features
+
+* **types:** add TypeScript type definitions ([b7984c1](https://github.com/microlinkhq/memoize-token/commit/b7984c12a85c47204799f6595c9cf8cf76dc3864))
+
 ### 1.1.16 (2025-11-21)
 
 ### 1.1.15 (2025-10-15)
