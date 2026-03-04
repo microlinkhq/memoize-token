@@ -4,6 +4,7 @@
   "homepage": "https://nicedoc.io/microlinkhq/memoize-token",
   "version": "1.1.16",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": {
     "email": "hello@microlink.io",
     "name": "microlink.io",
@@ -58,7 +59,8 @@
     "node": ">= 8"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
